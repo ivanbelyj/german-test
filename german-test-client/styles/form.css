@@ -1,0 +1,31 @@
+.form {
+  margin-top: 2.5em;
+}
+
+.form__button {
+  margin-top: 2.5em;
+}
+
+.form__textarea {
+  height: 7em;
+}
+
+.form__label {
+  display: inline-block;
+  margin: 1em 0;
+}
+
+.form__text-input {
+  margin: 1em;
+}
+
+@media screen and (max-width: 750px) {
+  .form__text-input {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  .form__label {
+    margin-top: 2em;
+  }
+}

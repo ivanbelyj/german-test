@@ -1,0 +1,7 @@
+.test-question-block {
+  margin: 35px 0;
+}
+
+.test-question-block > * {
+  margin: 15px 0;
+}

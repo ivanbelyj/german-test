@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Тест на знание немецкого</title>
+
+    <link rel="stylesheet" href="german-test-client/styles/section.css" />
+    <link rel="stylesheet" href="german-test-client/styles/body.css" />
+    <link rel="stylesheet" href="german-test-client/styles/text.css" />
+    <link rel="stylesheet" href="german-test-client/styles/title.css" />
+    <link rel="stylesheet" href="german-test-client/styles/form.css" />
+    <link rel="stylesheet" href="german-test-client/styles/textarea.css" />
+    <link rel="stylesheet" href="german-test-client/styles/text-input.css" />
+    <link rel="stylesheet" href="german-test-client/styles/button.css" />
+  </head>
+  <body class="body">
+    <a href="index.html">Ссылка на домашнюю страницу</a>
+    <section class="section task-description">
+      <h2 class="title">Описание задачи</h2>
+      <p class="text">
+        Тест на знание немецкого языка с возможностью добавлять новые задания. В
+        тестовых заданиях требуется вставить в предложение на немецком
+        пропущенное слово (место пропущенного слова указано последовательностью
+        "___"). Можно добавить новое задание с помощью формы добавления, а также
+        начать тестирование, предварительно выбрав количество вопросов. В данный
+        момент приложение находится в разработке.
+      </p>
+    </section>
+    <section class="section add-task">
+      <h2 class="title">Добавить новое задание</h2>
+      <p class="text">
+        Для указания места пропущенного слова в предложении используйте три
+        символа нижнего подчёркивания: ___
+      </p>
+      <form
+        class="form add-question-form"
+        method="POST"
+        action="/german-test-php/add-question.php"
+      >
+        <label class="text form__label">Предложение (на немецком)</label>
+        <textarea
+          class="textarea form__textarea text"
+          name="sentense"
+          required
+        ></textarea>
+        <label class="text form__label">Пропущенное слово</label>
+        <input
+          class="text-input text form__text-input"
+          type="text"
+          name="missing-word"
+          required
+        />
+        <button type="submit" class="button form__button text">Добавить</button>
+      </form>
+    </section>
+    <section class="section start-test">
+      <h2 class="title">Тестиро&shy;вание</h2>
+      <p class="text">
+        При указании значения, которое превосходит количество уникальных
+        вопросов на сервере, будут взяты все имеющиеся вопросы
+      </p>
+      <form class="form" method="POST" action="german-test-php/start-test.php">
+        <label class="text form__label">Количество вопросов</label>
+        <input
+          class="text-input text form__text-input"
+          type="number"
+          min="1"
+          max="100"
+          name="questions-count"
+          required
+        />
+        <button type="submit" class="button form__button text">
+          Начать тестирование
+        </button>
+      </form>
+    </section>
+
+    <script src="german-test-client/scripts/add-question.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тест на знание немецкого</title>
+    <link rel="stylesheet" href="german-test-client/styles/body.css" />
+    <link rel="stylesheet" href="german-test-client/styles/section.css" />
+    <link rel="stylesheet" href="german-test-client/styles/title.css" />
+    <link rel="stylesheet" href="german-test-client/styles/text.css" />
+    <link rel="stylesheet" href="german-test-client/styles/text-input.css" />
+    <link rel="stylesheet" href="german-test-client/styles/button.css" />
+    <link rel="stylesheet" href="german-test-client/styles/form.css" />
+    <link
+      rel="stylesheet"
+      href="german-test-client/styles/test-question-block.css"
+    />
+  </head>
+  <body class="body">
+    <form
+      class="section section-test"
+      method="POST"
+      action="german-test-php/results.php"
+    >
+      <h2 class="title">Тест</h2>
+      <p class="text test-description">
+        Введите в поля ввода слова, которые должны быть на местах, обозначенных
+        как "___"
+      </p>
+      <div class="questions"></div>
+      <button type="submit" class="button form__button text end-test-button">
+        Завершить тестирование
+      </button>
+    </form>
+
+    <!--script
+      src="german-test-client/scripts/test-question-block.js"
+      type="module"
+    ></script-->
+    <!--script
+      src="german-test-client/scripts/test-question.js"
+      type="module"
+    ></script-->
+    <script
+      src="german-test-client/scripts/german-test.js"
+      type="module"
+    ></script>
+  </body>
+</html>

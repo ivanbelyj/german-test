@@ -1,0 +1,13 @@
+{"id":"61a9177d52561","text":"Ich ___ Adolf","answer":"bin"}
+{"id":"61a9178acd926","text":"Mein Name ___ Adolf","answer":"ist"}
+{"id":"61a917bad87f2","text":"Ich komme ___ Berlin.","answer":"aus"}
+{"id":"61a917f1b9864","text":"Ich gehe ___ Stra\u00dfe entlang","answer":"die"}
+{"id":"61a9182029273","text":"Wie sp\u00e4t ___ es?","answer":"ist"}
+{"id":"61a9310f188fc","text":"Re lai keta tesh te kias, u davan edreim ___ gefeil","answer":"lai"}
+{"id":"61a933daceace","text":"Ei ___ elasva meo","answer":"le"}
+{"id":"61a933f4416dc","text":"Teshesan ___ ei te faket","answer":"dei"}
+{"id":"61a9aa6b80252","text":"df","answer":"sdf"}
+{"id":"61a9aaa64cf6c","text":"sdf","answer":"sdf"}
+{"id":"61a9ab001f195","text":"asd","answer":"asd"}
+{"id":"61a9ace1771e9","text":"Ich komme ___ Berlin","answer":"aus"}
+{"id":"61a9aced3cb0a","text":"Ich komme Berlin ___","answer":"hj"}

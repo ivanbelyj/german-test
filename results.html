@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Результаты тестирования</title>
+    <link rel="stylesheet" href="german-test-client/styles/body.css" />
+    <link rel="stylesheet" href="german-test-client/styles/section.css" />
+    <link rel="stylesheet" href="german-test-client/styles/text.css" />
+    <link rel="stylesheet" href="german-test-client/styles/title.css" />
+    <link rel="stylesheet" href="german-test-client/styles/color.css" />
+    <link
+      rel="stylesheet"
+      href="german-test-client/styles/text-answer-block.css"
+    />
+    <link rel="stylesheet" href="german-test-client/styles/button.css" />
+    <link rel="stylesheet" href="german-test-client/styles/results.css" />
+  </head>
+  <body class="body">
+    <section class="section results">
+      <h2 class="title">Результаты тестирования</h2>
+      <div class="text">
+        Процент правильно выполненных заданий:
+        <span class="correctness-percent"><strong>Процент%</strong></span>
+      </div>
+      <div class="results__test-answers-wrap">
+        <div class="test-answer results__test-answer">
+          <h3 class="title test-answer__number">1</h3>
+          <div class="text test-answer__correctness-string">Не верно</div>
+          <div class="text test-answer__question-text"></div>
+          <div class="text test-answer__correct-answer-wrap">
+            Правильный ответ:
+            <span class="test-answer__correct-answer color_green"
+              >Der apfel</span
+            >
+          </div>
+        </div>
+      </div>
+      <a class="text button" href="task.html">На главную</a>
+    </section>
+    <script src="german-test-client/scripts/results.js" type="module"></script>
+  </body>
+</html>

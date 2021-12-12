@@ -1,0 +1,22 @@
+.button {
+  display: block;
+  width: 100%;
+  padding: 0.8em 0;
+  background-color: #ecac4b;
+  outline: none;
+  border: none;
+  transition: background-color 0.1s;
+  -webkit-transition: background-color 0.1s;
+  -moz-transition: background-color 0.1s;
+  -ms-transition: background-color 0.1s;
+  -o-transition: background-color 0.1s;
+  text-align: center;
+  color: #222;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #dfa349;
+}
+.button:active {
+  background-color: #be8b3f;
+}
